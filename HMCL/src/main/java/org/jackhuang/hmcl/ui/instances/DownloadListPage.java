@@ -627,7 +627,7 @@ public class DownloadListPage extends Control implements DecoratorPage {
                     }
                 });
             }
-
+/*
             if (RegionUtils.isIsChinaMainlandNetwork()) {
                 BorderPane wrapper = new BorderPane();
 
@@ -644,7 +644,8 @@ public class DownloadListPage extends Control implements DecoratorPage {
                 this.getChildren().setAll(wrapper);
             } else {
                 this.getChildren().setAll(pane);
-            }
+            }*/
+            getChildren().setAll(pane);
         }
 
         private record CategoryIndented(int indent, RemoteAddonRepository.Category category) {

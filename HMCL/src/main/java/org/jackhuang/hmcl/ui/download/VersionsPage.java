@@ -452,7 +452,7 @@ public final class VersionsPage extends Control implements WizardPage, Refreshab
 
                 root.setCenter(transitionPane);
             }
-
+/*
             if (RegionUtils.isIsChinaMainlandNetwork()) {
                 BorderPane wrapper = new BorderPane();
 
@@ -469,7 +469,8 @@ public final class VersionsPage extends Control implements WizardPage, Refreshab
                 this.getChildren().setAll(wrapper);
             } else {
                 this.getChildren().setAll(root);
-            }
+            } */
+            this.getChildren().setAll(root);
         }
 
         private void updateList() {

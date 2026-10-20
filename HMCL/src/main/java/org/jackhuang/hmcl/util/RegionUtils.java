@@ -73,7 +73,7 @@ public final class RegionUtils {
     private static volatile @Nullable Boolean isChinaMainlandNetwork;
 
     private static boolean checkChinaMainlandNetwork() {
-        if (!IS_CHINA_MAINLAND_MACHINE)
+/*        if (!IS_CHINA_MAINLAND_MACHINE)
             return false;
 
         switch (ZoneId.systemDefault().getId()) {
@@ -91,7 +91,7 @@ public final class RegionUtils {
                 return false;
             }
         }
-
+*/
         @NotNullByDefault
         @JsonSerializable
         record IpWhoIsResponse(boolean success, String country_code) {
